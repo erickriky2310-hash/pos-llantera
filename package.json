@@ -1,0 +1,28 @@
+{
+  "name": "pos-llantera",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5180 --strictPort",
+    "build": "tsc -b && vite build",
+    "test": "node --experimental-strip-types --test src/data.test.ts src/stage1.test.ts src/stage2.test.ts src/stage2-correccion.test.ts src/printing.test.ts",
+    "preview": "vite preview --host 127.0.0.1 --port 5180 --strictPort",
+    "demo": "node --experimental-strip-types scripts/generate-demo.ts"
+  },
+  "dependencies": {
+    "dexie": "^4.0.11",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "fake-indexeddb": "^6.0.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.1.0",
+    "vite-plugin-pwa": "^0.21.1"
+  }
+}
